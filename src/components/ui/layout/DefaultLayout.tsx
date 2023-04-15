@@ -23,6 +23,21 @@ export const DefaultLayout = (props: Props) => {
           </h1>
           <div className="cursor-pointer">アイコン</div>
         </div>
+        <div>
+          <span>ページ確認用</span>
+          <Link
+            href="/mypage"
+            className="inline-block text-blue-900 underline ml-2"
+          >
+            マイページ
+          </Link>
+          <Link
+            href="/create-post"
+            className="inline-block text-blue-900 underline ml-2"
+          >
+            募集作成
+          </Link>
+        </div>
       </header>
       <main className="bg-slate-100 px-4 py-8">{props.children}</main>
       <footer>footer</footer>
